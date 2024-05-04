@@ -1,0 +1,86 @@
+body{
+    background-color: #C8BFE7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3F48CC;
+}
+
+.splash{
+    padding: 5%;
+}
+.splash .left{
+    float: left;
+    padding-top: 10%;
+    width: 55%;
+}
+.splash h1{
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    font-weight: normal;
+}
+.splash .description{
+    border-top: #3F48CC 1vw solid;
+    border-left: #3F48CC 1vw solid;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 5%;
+    overflow: hidden; 
+    border-radius: 2vw 0 0 2vw;
+}
+.splash .right{
+    float: left;
+    padding-left: 15%;
+    padding-top: 11.5%;
+}
+.right h2{
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.1vw;
+    font-weight: normal;
+}
+.splash button{
+    background-color: #C8BFE7;
+    color: #3F48CC;
+    border: none;
+    padding: 0.5vw 1vw;
+    font-size: 1.8vw;
+    font-weight: bold;
+    border-radius: 1vw;
+    cursor: pointer;
+    display: block;
+    float: top;
+    margin-bottom: 0.5vw;
+    position: relative;
+    border-bottom: #3F48CC 1vw solid;
+    border-radius: 0 0 2vw 0;
+}
+.right .buttons{
+    margin-left: 0.5vw;
+    border-left: #3F48CC 1vw solid;
+    border-radius: 0 0 0 0;
+}
+.arrow{
+    margin-left: 2%;
+    font-size: 2vw;
+    width: 0;
+    height: 0;
+}
+.link1{
+    text-decoration: none;
+    
+}
+.other{
+    position: relative;
+    top: 35vw;
+    right: 17vw;
+    width: 3vw;
+    height: 3vw;
+    padding: 1.3vw;
+    border-left: #3F48CC 1vw solid;
+    border-bottom: #3F48CC 1vw solid;
+    border-radius: 0 0 2vw 2vw;
+}
