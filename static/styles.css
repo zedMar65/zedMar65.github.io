@@ -21,6 +21,9 @@ body{
     margin-bottom: 5%;
     font-weight: normal;
 }
+.splash h1:hover{
+    animation: rainbow 1s infinite;
+}
 .splash .description{
     border-top: #3F48CC 1vw solid;
     border-left: #3F48CC 1vw solid;
@@ -31,6 +34,7 @@ body{
     border-radius: 2vw 0 0 2vw;
 }
 .splash .right{
+
     float: left;
     padding-left: 15%;
     padding-top: 11.5%;
@@ -58,10 +62,40 @@ body{
     border-bottom: #3F48CC 1vw solid;
     border-radius: 0 0 2vw 0;
 }
-.right .buttons{
+.right .buttons {
     margin-left: 0.5vw;
     border-left: #3F48CC 1vw solid;
-    border-radius: 0 0 0 0;
+    border-radius: 0;
+}
+.right .buttons button {
+    color: #3F48CC;
+    transition: color 0.3s ease;
+}
+.right .buttons button:hover {
+    animation: rainbow 1s infinite;
+}
+@keyframes rainbow {
+    0% {
+        color: #FF0000;
+    }
+    16% {
+        color: #FF7F00;
+    }
+    33% {
+        color: #FFFF00;
+    }
+    50% {
+        color: #00FF00;
+    }
+    66% {
+        color: #0000FF;
+    }
+    83% {
+        color: #4B0082;
+    }
+    100% {
+        color: #9400D3;
+    }
 }
 .arrow{
     margin-left: 2%;
@@ -83,4 +117,145 @@ body{
     border-left: #3F48CC 1vw solid;
     border-bottom: #3F48CC 1vw solid;
     border-radius: 0 0 2vw 2vw;
+}
+.content1{
+    display: block;
+    float: left;
+    width: 60%;
+    margin-left: 30%;
+    border-bottom: #3F48CC 1vw solid;
+    border-right: #3F48CC 1vw solid;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    font-size: 1.5vw;
+    overflow: hidden; 
+    border-radius: 0 1vw 2vw 2vw;
+}
+.content1 h2{
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.1vw;
+    font-weight: normal;
+}
+.content1 h2:hover{
+    animation: rainbow 1s infinite;
+}
+.content2{
+    margin-top: 5%;
+    display: block;
+    float: left;
+    width: 60%;
+    margin-left: 4%;
+    border-bottom: #3F48CC 1vw solid;
+    border-left: #3F48CC 1vw solid;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    font-size: 1.5vw;
+    overflow: hidden; 
+    border-radius: 1vw 0 2vw 2vw;
+}
+.content2 h2{
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.1vw;
+    font-weight: normal;
+}
+.content2 h2:hover{
+    animation: rainbow 1s infinite;
+}
+.gap{
+    display: block;
+    float: left;
+    height: 30vw;
+    width: 100%;
+}
+
+@keyframes dotAnimation {
+    0% { content: '. '; }
+    25% { content: '.. '; }
+    50% { content: '... '; }
+    75% { content: '.... '; }
+    100% { content: '. '; }
+}
+
+.content2 li p::after {
+    content: '. ';
+    animation: dotAnimation 2s infinite;
+}
+.content2 a{
+    text-decoration: none;
+    color: #3F48CC;
+}
+.content3{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 60%;
+    margin-left: 30%;
+    border-bottom: #3F48CC 1vw solid;
+    border-right: #3F48CC 1vw solid;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    font-size: 1.5vw;
+    overflow: hidden; 
+    border-radius: 0 1vw 2vw 2vw;
+    padding-top: 3vw;
+    margin-top: 3vw;
+}
+.content3 h2{
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.1vw;
+    font-weight: normal;
+}
+.content3 h2:hover{
+    animation: rainbow 1s infinite;
+}
+.content3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.content3 nav, .content3 p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.content3 nav{
+    font-family: consolas, monospace;
+}
+.content3 li:hover {
+    animation: dostAnimation 2s forwards;
+    cursor: pointer;
+}
+@keyframes dostAnimation {
+    from {
+        font-size: 1.5vw; /* Initial font size */
+    }
+    to {
+        font-size: 2vw; /* Double font size */
+    }
+}
+.tooltip {
+    position: absolute;
+    top: -20px; /* Adjust position above the nav element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 999;
+}
+
+.bid {
+    position: relative; /* Ensure the parent is positioned relative for absolute positioning */
 }
