@@ -6,6 +6,19 @@ body{
     color: #3F48CC;
 }
 
+    @keyframes roll {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(180deg); }
+      50% { transform: rotate(360deg); }
+      75% { transform: rotate(540deg); }
+      100% { transform: rotate(720deg); }
+    }
+    .cursed-text span {
+      display: inline-block;
+      animation: roll 2s infinite ease-in-out;
+      animation-delay: calc(var(--i) * 0.2s);
+    }
+
 .splash{
     padding: 5%;
 }
